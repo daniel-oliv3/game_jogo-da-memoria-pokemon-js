@@ -99,3 +99,14 @@ let unmatch = function(){
     }, 500);
     count = 0;
 }
+
+
+
+
+/*
+    Autor: Daniel Oliveira
+    Email: danieloliveira.webmaster@gmail.com
+    Manaus/Amazonas
+    25/06/2022
+
+*/
