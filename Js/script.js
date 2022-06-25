@@ -1,4 +1,4 @@
-// cards image info
+/* cards image info/informações da imagem dos cartões */
 let cardsList = [
     {"name" : "pokemon1", "img_src" : "images/pokemon-1.jpg"},
     {"name" : "pokemon2", "img_src" : "images/pokemon-2.jpg"},
@@ -19,9 +19,9 @@ let grid = document.createElement('div');
 grid.setAttribute('class', 'grid');
 cardBoard.appendChild(grid);
 
-// creating duplicate of the cards
+/* creating duplicate of the cards/criando duplicata dos cartões */
 let cardGrid = cardsList.concat(cardsList);
-// creating random grid by shuffling the array of cards
+/* creating random grid by shuffling the array of cards/criando grade aleatória embaralhando a matriz de cartas */
 function shuffleArray(arr){
     for(let i = arr.length - 1; i > 0; i--){
         const j = Math.floor(Math.random() * (i + 1));
@@ -44,7 +44,7 @@ function showCardBoard(){
 
 showCardBoard();
 
-// event listener
+/* event listener/ouvinte de eventos */
 grid.addEventListener('click', function(e){
     let selectedCard = e.target.parentElement;
     if(e.target.classList.contains('grid')){
@@ -77,7 +77,7 @@ function checkCardMatch(guess1, guess2){
     else unmatch();
 }
 
-// apply the matched css
+/* apply the matched css/aplique o css correspondente*/
 let match = function(){
     let selectedCards = document.querySelectorAll('.selected');
     selectedCards.forEach(card => {
